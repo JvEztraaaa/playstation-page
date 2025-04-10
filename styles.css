@@ -27,7 +27,7 @@
 
 .header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   background-color: #fffafa;
   display: flex;
@@ -76,7 +76,7 @@ a {
   gap: 20px;
 }
 
-.signin-button {
+.button {
   color: white;
   font-size: 16px;
   background-color: #3882f6;
@@ -85,11 +85,6 @@ a {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-}
-
-.signin-button:hover {
-  background-color: white;
-  color: #3882f6;
 }
 
 #search-icon {
@@ -115,8 +110,8 @@ a {
 }
 
 .image-row {
-  height: 300px;
-  padding: 20px 80px;
+  height: 260px;
+  padding: 20px 150px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -125,8 +120,8 @@ a {
 }
 
 .images {
-  height: 140px;
-  width: 260px;
+  height: 170px;
+  width: 300px;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
@@ -135,4 +130,57 @@ a {
   cursor: pointer;
   border: 2px solid #3882f6;
   transform: scale(0.95);
+}
+
+.accessories {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#acc-image {
+  height: 60vh;
+  width: 55vw;
+  margin: 0 10vh;
+}
+
+.acc-left {
+  margin: 0 10vh;
+}
+
+#acc-title {
+  font-size: 56px;
+  font-weight: 350;
+  margin-bottom: 6vh;
+}
+
+#acc-content {
+  font-size: 28px;
+  font-weight: 350;
+  color: #0068bd;
+  margin-bottom: 1vh;
+}
+
+#acc-desc {
+  font-size: 16px;
+  color: #6b6b6b;
+  margin-bottom: 2vh;
+}
+
+#button-2 {
+  color: white;
+  font-size: 16px;
+  background-color: #0070cc;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#button-2:hover {
+  outline: 2px solid #0068bd;
+  outline-offset: 2px;
 }
