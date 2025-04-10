@@ -184,3 +184,39 @@ a {
   outline: 2px solid #0068bd;
   outline-offset: 2px;
 }
+
+.image-row {
+  height: 260px;
+  padding: 20px 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-set {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #6b6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-image {
+  height: 17vh;
+  width: 14.1vw;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(156, 156, 156, 0.5);
+  margin-bottom: 15px;
+  padding: 20px 32px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.row-image:hover {
+  outline: 2px solid #0068bd;
+  outline-offset: 5px;
+  transform: scale(1.02);
+}
