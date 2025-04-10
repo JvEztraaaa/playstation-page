@@ -21,6 +21,10 @@
   filter: invert(1) brightness(2);
 }
 
+#sony-logo:hover {
+  cursor: pointer;
+}
+
 .header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 10vh;
@@ -42,6 +46,10 @@
   margin: 0 15px;
   height: 50px;
   width: 50px;
+}
+
+#ps-logo:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -89,6 +97,12 @@ a {
   width: 25px;
 }
 
+#search-icon:hover {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
 .hero {
   height: 80vh;
   width: 100%;
@@ -101,7 +115,8 @@ a {
 }
 
 .image-row {
-  height: 80vh;
+  height: 300px;
+  padding: 20px 80px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -110,7 +125,14 @@ a {
 }
 
 .images {
-  height: 200px;
-  width: 200px;
+  height: 140px;
+  width: 260px;
   border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.images:hover {
+  cursor: pointer;
+  border: 2px solid #3882f6;
+  transform: scale(0.95);
 }
