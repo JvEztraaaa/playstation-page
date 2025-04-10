@@ -94,8 +94,6 @@ a {
 
 #search-icon:hover {
   cursor: pointer;
-  height: 25px;
-  width: 25px;
 }
 
 .hero {
@@ -204,6 +202,17 @@ a {
   align-items: center;
 }
 
+.image-row2 {
+  height: 260px;
+  padding: 20px 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8vh;
+}
+
 .row-image {
   height: 17vh;
   width: 14.1vw;
@@ -219,4 +228,75 @@ a {
   outline: 2px solid #0068bd;
   outline-offset: 5px;
   transform: scale(1.02);
+}
+
+.games {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121314;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#game-title {
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 6vh;
+  margin-bottom: 4vh;
+}
+
+#button-3 {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  padding: 16px 17px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 7vh;
+}
+
+#button-3:hover {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.image-set2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.game-icons-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.game-icons-bot {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.game-icons {
+  height: 275px;
+  width: 275px;
+  border-radius: 8%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-icons:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
