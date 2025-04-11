@@ -1,7 +1,8 @@
 # 🎮 PlayStation Landing Page Clone <br><br>
 
-![Landing Page Preview](images/preview.png) <br>
-![Landing Page Preview](images/preview2.png)
+![Landing Page Preview](images/preview.png) <br><br>
+![Landing Page Preview](images/preview2.png) <br><br>
+![Landing Page Preview](images/preview3.png)
 
 The goal of this project is to clone an existing landing page of a website using HTML and CSS. <br>
 
