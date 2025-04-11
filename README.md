@@ -1,4 +1,4 @@
-# 🎮 PlayStation Landing Page Clone <br><br>
+# 🎮 PlayStation Landing Page Clone
 
 ![Landing Page Preview](images/preview.png) <br><br>
 ![Landing Page Preview](images/preview2.png) <br><br>
