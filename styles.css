@@ -300,3 +300,58 @@ a {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Codes below are to make the page responsive. Not final. */
+@media (max-width: 1024px) {
+  .image-row,
+  .image-row2,
+  .game-icons-top,
+  .game-icons-bot {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .row-image,
+  .images,
+  .game-icons {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .header,
+  .accessories {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-left ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .header-right {
+    margin: 20px 0;
+  }
+
+  #acc-image {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .acc-left {
+    margin: 20px;
+  }
+}
