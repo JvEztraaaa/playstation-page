@@ -1,18 +1,43 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-header,
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .top-header {
   background-color: black;
   height: 5vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   padding-right: 10px;
+}
+
+.header {
+  background-color: #fffafa;
+  height: 8vh;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+#sony-logo,
+#ps-logo,
+#search-icon {
+  cursor: pointer;
 }
 
 #sony-logo {
@@ -21,35 +46,15 @@
   filter: invert(1) brightness(2);
 }
 
-#sony-logo:hover {
-  cursor: pointer;
-}
-
-.header {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 8vh;
-  width: 100%;
-  background-color: #fffafa;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 #ps-logo {
   margin: 0 15px;
   height: 50px;
   width: 50px;
 }
 
-#ps-logo:hover {
-  cursor: pointer;
+#search-icon {
+  height: 25px;
+  width: 25px;
 }
 
 ul {
@@ -69,36 +74,55 @@ a {
 
 .header-right {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin-right: 15px;
   gap: 20px;
+  margin-right: 15px;
+}
+
+.button,
+.button-2,
+#button-3 {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
 }
 
 .button {
-  color: white;
-  font-size: 16px;
   background-color: #3882f6;
-  border: none;
+  color: white;
   padding: 5px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
-#search-icon {
-  height: 25px;
-  width: 25px;
+.button-2 {
+  background-color: #0070cc;
+  color: white;
+  font-weight: bold;
+  padding: 15px 15px;
 }
 
-#search-icon:hover {
-  cursor: pointer;
+.button-2:hover {
+  outline: 2px solid #0068bd;
+  outline-offset: 2px;
+}
+
+#button-3 {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 18px 20px;
+  margin-bottom: 7vh;
+}
+
+#button-3:hover {
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
 .hero {
-  height: 80vh;
   width: 100%;
+  height: 80vh;
 }
 
 #baseball-hero {
@@ -107,33 +131,110 @@ a {
   object-fit: cover;
 }
 
-.image-row {
-  height: 260px;
-  padding: 20px 150px;
+.image-row,
+.image-row2 {
   width: 100%;
+  height: 260px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 100px;
+}
+
+.image-row2 {
+  margin-bottom: 5vh;
+}
+
+.images,
+.row-image,
+.game-icons {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .images {
   height: 170px;
   width: 300px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
 }
 
 .images:hover {
-  cursor: pointer;
   border: 2px solid #3882f6;
   transform: scale(0.95);
 }
 
-.accessories {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.row-image {
+  height: 17vh;
+  width: 14.1vw;
+  box-shadow: 0 2px 5px rgba(156, 156, 156, 0.5);
+  margin-bottom: 15px;
+  padding: 20px 32px;
+  transition: 0.1s ease-in-out;
+}
+
+.row-image:hover {
+  outline: 2px solid #0068bd;
+  outline-offset: 5px;
+  transform: scale(1.02);
+}
+
+.image-set,
+.image-set2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.image-set {
+  color: #6b6b6b;
+}
+
+.image-set2 {
+  color: white;
+  font-size: 16px;
+}
+
+.games {
+  background-color: #121314;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#game-title {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 6vh 0 4vh;
+}
+
+.game-icons-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-icons-bot {
+  margin: 5vh 0 10vh;
+}
+
+.game-icons {
+  height: 275px;
+  width: 275px;
+  object-fit: cover;
+}
+
+.game-icons:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.accessories {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -167,157 +268,21 @@ a {
   margin-bottom: 2vh;
 }
 
-.button-2 {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #0070cc;
-  border: none;
-  padding: 15px 15px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.button-2:hover {
-  outline: 2px solid #0068bd;
-  outline-offset: 2px;
-}
-
-.image-row {
-  height: 260px;
-  padding: 20px 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.image-set {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  color: #6b6b6b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-row2 {
-  height: 260px;
-  padding: 20px 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8vh;
-}
-
-.row-image {
-  height: 17vh;
-  width: 14.1vw;
-  border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(156, 156, 156, 0.5);
-  margin-bottom: 15px;
-  padding: 20px 32px;
-  cursor: pointer;
-  transition: 0.1s ease-in-out;
-}
-
-.row-image:hover {
-  outline: 2px solid #0068bd;
-  outline-offset: 5px;
-  transform: scale(1.02);
-}
-
-.games {
-  height: 100%;
-  width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121314;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#game-title {
-  font-size: 45px;
-  font-weight: 300;
-  margin-top: 6vh;
-  margin-bottom: 4vh;
-}
-
-#button-3 {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: white;
-  border: none;
-  padding: 18px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  margin-bottom: 7vh;
-}
-
-#button-3:hover {
-  outline: 2px solid white;
-  outline-offset: 2px;
-}
-
-.image-set2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.game-icons-top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.game-icons-bot {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-}
-
-.game-icons {
-  height: 275px;
-  width: 275px;
-  border-radius: 8%;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.game-icons:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
 .ann-container {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 65vh;
   width: 100%;
-  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("images/bg.webp");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%;
+  padding: 0 13%;
 }
 
 .ann-left {
-  margin-right: 5vw;
+  margin-right: 3vw;
 }
 
 #ann-title {
@@ -329,11 +294,41 @@ a {
 #ann-content {
   font-size: 20px;
   font-weight: 330;
-  margin-bottom: 3vh;
   color: #666666;
+  margin-bottom: 3vh;
 }
 
 #ann-image {
   width: 30vw;
-  height: 30vh;
+  height: 33vh;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  background-image: url("images/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  max-width: 40%;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.banner-text p {
+  font-size: 3.5rem;
+  margin-bottom: 5%;
+  color: white;
+}
+
+.banner-bottom {
+  width: 100%;
+  height: 70vh;
+  background-color: #26254f;
 }
