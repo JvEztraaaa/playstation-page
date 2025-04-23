@@ -369,7 +369,40 @@ h3.bot-txt {
   border-radius: 10px;
 }
 
-.follow {
+.socials {
   width: 100%;
   height: 50vh;
+  background-color: #f5eded;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+#follow {
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.social-logo {
+  width: 6vw;
+  height: 12vh;
+  border-radius: 14px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
